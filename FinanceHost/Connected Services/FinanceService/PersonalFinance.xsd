@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PersonalFinance" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PersonalFinance" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="Account">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ac_balance" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ac_id" type="xs:int" />
+      <xs:element minOccurs="0" name="ac_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ac_type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Account" nillable="true" type="tns:Account" />
+  <xs:complexType name="ArrayOfCategory">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Category" nillable="true" type="tns:Category" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCategory" nillable="true" type="tns:ArrayOfCategory" />
+  <xs:complexType name="Category">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ac_id" type="xs:int" />
+      <xs:element minOccurs="0" name="c_id" type="xs:int" />
+      <xs:element minOccurs="0" name="c_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="reqAmt" type="xs:decimal" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Category" nillable="true" type="tns:Category" />
+  <xs:complexType name="Transaction">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ExpenceIncome" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ac_id" type="xs:int" />
+      <xs:element minOccurs="0" name="c_id" type="xs:int" />
+      <xs:element minOccurs="0" name="t_amt" type="xs:int" />
+      <xs:element minOccurs="0" name="t_date" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="t_id" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Transaction" nillable="true" type="tns:Transaction" />
+  <xs:complexType name="ArrayOfTransaction">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Transaction" nillable="true" type="tns:Transaction" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTransaction" nillable="true" type="tns:ArrayOfTransaction" />
+</xs:schema>

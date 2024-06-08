@@ -1,0 +1,7 @@
+E:\SEM6\WSD\PersonalFinance\bin\Debug\PersonalFinance.dll.config
+E:\SEM6\WSD\PersonalFinance\bin\Debug\PersonalFinance.dll
+E:\SEM6\WSD\PersonalFinance\bin\Debug\PersonalFinance.pdb
+E:\SEM6\WSD\PersonalFinance\obj\Debug\PersonalFinance.csproj.AssemblyReference.cache
+E:\SEM6\WSD\PersonalFinance\obj\Debug\PersonalFinance.csproj.CoreCompileInputs.cache
+E:\SEM6\WSD\PersonalFinance\obj\Debug\PersonalFinance.dll
+E:\SEM6\WSD\PersonalFinance\obj\Debug\PersonalFinance.pdb
